@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wana's Timer</title>
+    <link rel="stylesheet" href="time.css">
+
+    
+</head>
+<header id="profile-header">
+    
+    <img src="hunt.jpg" id="profile-pic">
+    <div id="profile-info">
+        <h2 id="profile-name">Wanas_timer</h2>
+        <p id="profile-username">© izwe.inc</p>
+    </div>
+</header>
+
+<body>
+    
+  <div id="alarm-wrapper">
+    <img id="alarm-popup" src="audio.gif">
+    <p id="alarm-text">Wake Up!</p>
+    <img id="gohan" src="gohan.gif">
+</div>
+
+    <div class="picker-container">
+        <div class="picker-column" id="hr-picker"></div>
+        <div class="picker-column" id="min-picker"></div>
+        <div class="picker-column" id="sec-picker"></div>
+    </div>
+
+    <div class="label-row">
+        <p class="label">Hr</p>
+        <p class="label">Mins</p>
+        <p class="label">Secs</p>
+    </div>
+
+    <h1 id="display">00:00:00:00</h1>
+
+    <div class="controls">
+        <div class="btn-wrap">
+            <img src="dot.png" class="icon-btn" onclick="startFromPicker()">
+            <p>Start</p>
+        </div>
+
+        <div class="btn-wrap">
+            <img src="dot.png" class="icon-btn" onclick="pauseTimer()">
+            <p>Pause</p>
+        </div>
+
+        <div class="btn-wrap">
+            <img src="dot.png" class="icon-btn" onclick="resetTimer()">
+            <p>Reset</p>
+        </div>
+    </div>
+
+    <audio id="alarm-sound" src="olympian.mp3"></audio>
+
+    <script src="time.js"></script>
+</body>
+</html>
