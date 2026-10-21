@@ -1,10 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #010201;
+    font-family: "Edu QLD Hand", cursive;
+ 
+   
+    font-style: normal;
+    background: #000000;
     color: white;
     text-align: center;
     padding-top: 40px;
 }
+
 
 
 .picker-container {
@@ -66,15 +70,15 @@ body {
     transition: 0.2s;
 }
 .picker-column div:not(.selected):hover {
-    opacity: 0.7;
+    opacity: 3;
     transform: scale(1.1);
-    color: #374c6b;
+    color: #221e61;
     cursor: pointer;
 }
 .picker-column div.selected {
     opacity: 1;
     font-size: 40px;
-    color: #4a8cff;
+    color: #ececec;
 }
 
 
@@ -156,11 +160,33 @@ padding-left: 100px;
     pointer-events: none;
 }
 
+
+
+
+.header-btn {
+    
+    text-decoration: none;
+background-image: url("picker.gif");
+    color: white;
+    border: none;
+    padding:20px 12px;
+    border-radius: 10px;
+    margin-left:auto;
+    margin-right: 120px;
+    transition: all 0.3s ease;
+}
+
+.header-btn:hover {
+    transform: translateY(-3px);
+    
+}
+
+
+
 #alarm-wrapper.active {
     opacity: 1;
 }
 
-/* Mobile: place alarm wrapper below the pickers */
 @media (max-width: 600px) {
     #alarm-wrapper {
         position: relative;
@@ -219,4 +245,10 @@ padding-left: 100px;
     font-size: 14px;
     opacity: 0.7;
     color: white;
+}
+@media (max-width: 600px) {
+    .header-btn {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
 }
