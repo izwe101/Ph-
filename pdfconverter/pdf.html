@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pdf makers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pdf.css">
+</head>
+<body>
+  <header class="site-header">
+    
+      <img src="lone.jpg" alt="logo" class="logo">
+      <div class="header-text">
+        <h1> IMAGE TO PDF CONVERTER</h1>
+        <p>property of: izwe.inc</p>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    
+
+    <h1>
+      Image to PDF
+
+    
+    </h1>
+
+    <input type="file" id="imageInput" accept="image/png, image/jpeg" multiple>
+    <input type="text" id="pdfName" placeholder="Rename">
+    <button id="convertBtn">Convert to PDF</button>
+    <button id="home" onclick="location.href='../index.html' ">return to home <br></button>
+  </div>
+
+  <div id="matrixLoader">
+    <canvas id="matrixCanvas"></canvas>
+    <p>just chill...</p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="pdf.js"></script>
+
+</body>
+</html>
